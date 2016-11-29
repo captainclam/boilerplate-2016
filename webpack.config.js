@@ -9,6 +9,15 @@ module.exports = {
     contentBase: "./dist",
   },
   module: {
-    loaders: []
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: 'style!css'
+      },
+      {
+        test: /\.styl$/,
+        loader: 'style!css!stylus-loader'
+      },
+    ]
   }
 }

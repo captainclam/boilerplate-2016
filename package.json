@@ -9,6 +9,10 @@
     "dev": "webpack-dev-server"
   },
   "dependencies": {
+    "css-loader": "^0.26.0",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.4.0",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
     "webpack-init": "^0.1.2"
