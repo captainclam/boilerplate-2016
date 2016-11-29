@@ -16,7 +16,7 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           cacheDirectory: true,
-          presets: ['es2015']
+          presets: ['es2015', 'react']
         }
       },
       {
@@ -27,6 +27,10 @@ module.exports = {
         test: /\.styl$/,
         loader: 'style!css!stylus-loader'
       },
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
+      }
     ]
   }
 }

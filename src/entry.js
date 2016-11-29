@@ -5,10 +5,16 @@ import React from 'react'
 
 class HelloWorld extends React.Component {
   render() {
-    return <h1>Hello World!!!</h1>
+    console.log(this.props)
+    return <h1>Hello {this.props.person.getName()}!</h1>
   }
 }
 
+import Person from './person.ts'
+let person = new Person('Guy')
+
 document.addEventListener('DOMContentLoaded', (event) => {
-  ReactDOM.render(<HelloWorld />, document.getElementById('mount-point'))
+  ReactDOM.render(<HelloWorld person={person} />, document.getElementById('mount-point'))
 })
+
+
