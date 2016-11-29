@@ -1,22 +1,22 @@
 build: install
-  npm run dist
+	npm run dist
 
 clean:
-  rm -rf dist
+	rm -rf dist
 
 test: install
-  npm test
+	npm test
 
 lint: install
-  npm run lint
+	npm run lint
 
 dev: install
-  npm run dev
+	npm run dev
 
 install: node_modules
 
 .PHONY: test install lint
 
 node_modules:
-  npm install
-  touch node_modules
+	npm install
+	touch node_modules
